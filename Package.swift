@@ -26,7 +26,7 @@ let package = Package(
         .target(name: "StorylyTargets",
             dependencies: [
                 .target(name: "Storyly"),
-                .target(name: "SDWebImage")
+                "SDWebImage"
             ],
             path: "Sources"
         ),
