@@ -16,6 +16,7 @@ let package = Package(
         )
     ],
     dependencies: [
+        .package(name: "SDWebImage", url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.8.2")
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
     ],
@@ -25,7 +26,6 @@ let package = Package(
         .target(name: "StorylyTargets",
             dependencies: [
                 .target(name: "Storyly"),
-                .package(name: "SDWebImage", url: "https://github.com/SDWebImage/SDWebImage.git", from: "5.8.2")
             ],
             path: "Sources"
         ),
